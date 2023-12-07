@@ -4,7 +4,7 @@
     <test name="Test on Chrome">
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="org.testingNG.CreateNewProfile">
+            <class name="org.testingNG.createNewProfile">
                 <methods>
                     <include name="test1_NewProfile"/>
                     <include name="test2_Logout"/>
@@ -21,7 +21,7 @@
     <test name="Test on Safari">
         <parameter name="Browser" value="safari"/>
         <classes>
-            <class name="org.testingNG.CreateNewProfile">
+            <class name="org.testingNG.createNewProfile">
                 <methods>
                     <include name="test1_NewProfile"/>
                     <include name="test2_Logout"/>
