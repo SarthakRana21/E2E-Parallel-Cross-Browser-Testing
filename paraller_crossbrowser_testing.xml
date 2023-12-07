@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser-Parallel Testing" parallel="methods" thread-count="2">
+    <test name="Test on Chrome">
+        <parameter name="Browser" value="chrome"/>
+        <classes>
+            <class name="org.testingNG.CreateNewProfile">
+                <methods>
+                    <include name="test1_NewProfile"/>
+                    <include name="test2_Logout"/>
+                </methods>
+            </class>
+            <class name="org.testingNG.loginNewProfile">
+                <methods>
+                    <include name="test1_Login"/>
+                    <include name="test2_addToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test on Safari">
+        <parameter name="Browser" value="safari"/>
+        <classes>
+            <class name="org.testingNG.CreateNewProfile">
+                <methods>
+                    <include name="test1_NewProfile"/>
+                    <include name="test2_Logout"/>
+                </methods>
+            </class>
+            <class name="org.testingNG.loginNewProfile">
+                <methods>
+                    <include name="test1_Login"/>
+                    <include name="test2_addToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
